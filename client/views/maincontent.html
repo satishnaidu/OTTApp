@@ -1,0 +1,6 @@
+<div class="container" >
+  <div ng-repeat="image in imagemodel" class="imageCollection">
+    <div class="image {{'img'+image.index}}"  ><a href="#/video/{{image.videoId}}" ><img title="{{image.name}}" src="{{image.imgsrc}}" class="img-responsive"> </a> </div>
+    <div class="imageTitle">{{image.name}}</div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+
+ 
+<h2>Upload videos</h2>
+
+<form name="form">
+
+  Click on select to select and submit to upload the files.
+  <div class="button" ngf-select ng-model="files" ngf-multiple="true">Select</div>
+    <span>{{files.name}}</span>
+  <button type="submit" ng-click="submit()">submit</button>
+</form>

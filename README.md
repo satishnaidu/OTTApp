@@ -1,1 +1,1 @@
-# OTTApp
+Disney app for displaying videos using Kaltura Video API.

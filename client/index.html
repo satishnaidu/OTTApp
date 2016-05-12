@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/bootstrap-theme.css">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- For videojs HTML5 Video Player-->
+    <!-- <link rel="stylesheet" href="lib/bower_components/video.js/dist/video-js.css" /> -->
+    <!-- endbuild -->
+    </head>
+    <body ng-app='OTTApp' ng-controller='rootController' ng-keydown='handleKey($event)'>
+     
+      <section class="left">
+        <div ng-include="'views/leftmenu.html'"></div>
+      </section>
+      
+      <div class="right">       
+          <div ng-include="'views/search.html'"> </div>
+          <div ng-view="" >
+              <div id="kaltura_player" class="kalturaPlayer"> </div>
+          </div>
+         <!--<div ng-include="'views/home.html'"> </div>-->
+           
+      </div>
+ 
+    
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="lib/bower_components/jquery/dist/jquery.js"></script>
+    <script src="lib/bower_components/angular/angular.js"></script>
+    <script src="lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="lib/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="lib/bower_components/angular-route/angular-route.js"></script>
+    <script src="lib/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="lib/bower_components/video.js/dist/video.js"></script>
+    <script src="lib/bower_components/videojs-hotkeys/videojs.hotkeys.min.js"></script>
+    <script src="lib/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+
+    <!-- Kaltura Player API library -->
+
+      
+    <script src="http://cdnapi.kaltura.com/p/2076131/sp/207613100/embedIframeJs/uiconf_id/33696942/partner_id/2076131"></script>
+ 
+   
+    <script src="scripts/app.js"></script>
+    <script src="scripts/constants.js"></script>
+    <!-- services -->
+    <script src="scripts/services/serviceBase.js"></script>
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/mainController.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/videoController.js"></script>
+    <script src="scripts/controllers/rootController.js"></script>
+    <script src="scripts/controllers/uploadController.js"></script>
+    <script src="scripts/controllers/loginController.js"></script>
+    <script src="scripts/controllers/homeController.js"></script>
+    
+
+    <!-- Directives -->
+    <script src="scripts/directives/KeyEvents.js"></script>
+    <script src="scripts/directives/Nav.js"></script>
+    <script src="scripts/directives/NavElem.js"></script>
+    <script src="scripts/directives/NavTarget.js"></script>
+      <!-- endbuild -->
+
+   <!--  <script src="http://10.213.51.108:8080/target/target-script-min.js#anonymous"></script> -->
+  </body>
+</html>
